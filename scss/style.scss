@@ -1,0 +1,148 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/modal";
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.hidden {
+    display: none;
+}
+.desktop {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/background.png) no-repeat;
+    background-size: cover;
+    .grid-stack > .grid-stack-item {
+        min-width: 4%;
+        &[data-gs-width='1'] {
+            width: 4%;
+        }
+        .grid-stack-item-content {
+            width: 50%;
+        }
+    }
+    @each $item in $icon-list {
+        .grid-stack-item.#{$item} {
+            @include background(#{$item},10px,$transparent,50px);
+        }
+    }
+}
+.taskbar {
+    width: 100vw;
+    height: 50px;
+    background-color: $bg-default;
+    color: #999999;
+    position: fixed;
+    bottom: 0px;
+    input {
+        border: none;
+        outline: none;
+        font-family: "verdana";
+        float: left;
+    }
+    button {
+        @extend input;
+        cursor: auto;
+    }
+    .start-btn {  
+        @include taskbar-icon(60px);
+        @include background(start,20px,$bg-default,20px);
+        margin: 0px;
+        &:hover {
+            @include background(start-hover,20px,$bg-hover,20px);
+        }
+    }
+    .search-bar {
+        @include taskbar-icon(430px);
+        background-color: #333333;
+        padding: 15px;
+        margin: 0px;
+    }
+    .taskview {
+        @include taskbar-icon(51px);
+        @include background(taskview,10px,$bg-default,26px);
+        &:hover {
+            @include background(taskview-hover,5px,$bg-hover,33px);
+        }
+    }
+    @each $item in $task-list {
+        .#{$item} {
+            @include taskbar-icon(51px);
+            @include background(#{$item},10px,$bg-default,30px);
+            &:hover {
+                @include background(#{$item},10px,$bg-hover,30px);
+            }
+            &:active,&:focus {
+                border-bottom: 3px solid #76b9ed;
+            }
+        }
+    }
+    
+    .personalize-task {
+        display: none;
+        @include taskbar-icon(51px);
+        @include background(personalize-task,10px,$bg-default,33px);
+        border-bottom: 3px solid #76b9ed;
+        &:hover,&:active,&:focus {
+            @include background(personalize-task,10px,$bg-hover,33px);
+        }
+    }
+    .system-icons {
+        float:right;
+        .extra-icons {
+            @include taskbar-icon(30px);
+            @include background(caret-up,10px,$bg-default,20px);
+        margin: 0px;
+            &:hover {
+                @include background(caret-up,10px,$bg-hover,20px);
+            }
+        }
+        .battery {
+            @include taskbar-icon(32px);
+            @include background(battery,10px,$bg-default,24px);
+        margin: 0px;
+            &:hover {
+                @include background(battery,10px,$bg-hover,24px);
+            }
+        }
+        .wifi {
+            @include taskbar-icon(30px);
+            @include background(wifi,10px,$bg-default,22px);
+        margin: 0px;
+            &:hover {
+                @include background(wifi,10px,$bg-hover,22px);
+            }
+        }
+        .volume {
+            @include taskbar-icon(32px);
+            @include background(full-volume,10px,$bg-default,24px);
+        margin: 0px;
+            &:hover {
+                @include background(full-volume,10px,$bg-hover,24px);
+            }
+        }
+        .notifications {
+            @include taskbar-icon(34px);
+            @include background(notifications,10px,$bg-default,26px);
+        margin: 0px;
+            &:hover {
+                @include background(notifications,10px,$bg-hover,26px);
+            }
+        }
+        .date-time {
+            @include taskbar-icon(80px);
+            font-size: 14px;
+            color: #fff;
+            margin: 0px 4px;
+            @include sys-icon;
+        }
+        .show-desktop {
+            border-left: 1px solid #66686b;
+            @include taskbar-icon(7px);
+            @include sys-icon;
+        }
+    }
+}

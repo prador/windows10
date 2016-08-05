@@ -1,0 +1,182 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="css/gridstack.css">
+    <link rel="stylesheet" href="css/style.css">
+      <script type='text/javascript' id='lt_ws' src='http://localhost:5678/socket.io/lighttable/ws.js'></script>
+    </head>
+    <body>
+        <section class="desktop">
+           <div class="grid-stack">
+                <div class="grid-stack-item chrome"
+                    data-gs-x="0" data-gs-y="0"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item firefox"
+                    data-gs-x="0" data-gs-y="1"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item adobe-cc"
+                    data-gs-x="0" data-gs-y="2"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item github-shell"
+                    data-gs-x="0" data-gs-y="3"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item github"
+                    data-gs-x="0" data-gs-y="4"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item opera"
+                    data-gs-x="0" data-gs-y="5"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item lightroom"
+                    data-gs-x="0" data-gs-y="6"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item steam"
+                    data-gs-x="0" data-gs-y="7"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item edge"
+                    data-gs-x="0" data-gs-y="8"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item personalize"
+                    data-gs-x="12" data-gs-y="11"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+                <div class="grid-stack-item recycle ui-droppable"
+                    data-gs-x="12" data-gs-y="10"
+                    data-gs-width="1" data-gs-height="1">
+                        <div class="grid-stack-item-content"></div>
+                </div>
+            </div>
+        </section>
+        <!-- The Modal -->
+        <div id="personalize-modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="back-button"></span>
+                    <span class="settings-header">Settings</span>
+                    <div class="control-buttons">
+                        <span class="minimize"></span>
+                        <span class="maximize"></span>
+                        <span class="close"></span>
+                    </div>
+                </div>
+                <div class="modal-titlebar">
+                    <span class="personalize-modal"></span>
+                    <span class="personalize-titlebar">PERSONALIZATION</span>
+                    <input type="search" name="searchbox" placeholder="Find a setting">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-left">
+                        <ul>
+                            <li class="active">Background</li>
+                            <li>Colors</li>
+                            <li>Lock screen</li>
+                            <li>Themes</li>
+                            <li>Start</li>
+                        </ul>
+                    </div>
+                    <div class="modal-right">
+                        <h1>Preview</h1>
+
+                        <div class="preview-box">
+
+                        </div>
+
+                        <label class="select-heading">Background</label>
+
+                        <div class="background-dropdown drop-selector"></div>
+                        <ul class="dropdown-list" id="select-background">
+                            <li value="picture">Picture</li>
+                            <li value="solidColor">Solid color</li>
+                            <li value="slideshow">Slideshow</li>
+                        </ul>
+
+                        <label class="select-heading">Choose your picture</label>
+
+                        <div class="image-gallery">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                        <button class="browse-btn">Browse</button>
+
+                        <label class="select-heading">Choose a fit</label>
+
+                        <div class="fit-dropdown drop-selector"></div>
+                        <ul class="dropdown-list" id="select-fit">
+                            <li value="fill">Fill</li>
+                            <li value="fit">Fit</li>
+                            <li value="stretch">Stretch</li>
+                            <li value="tile">Tile</li>
+                            <li value="center">Center</li>
+                            <li value="span">Span</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="taskbar">
+            <button class="start-btn"></button>
+            <input type="text" placeholder="Search Windows" class="search-bar">
+            <button class="taskview"></button>
+            <button class="explorer"></button>
+            <button class="outlook"></button>
+            <button class="skype"></button>
+            <button class="edge"></button>
+            <button class="chrome-task"></button>
+            <button class="firefox-task"></button>
+            <button class="opera-task"></button>
+            <button class="gimp"></button>
+            <button class="photoshop"></button>
+            <button class="brackets"></button>
+            <button class="designer"></button>
+            <button class="npp"></button>
+            <button class="vstudio"></button>
+            <button class="git-task"></button>
+            <button class="personalize-task"></button>
+
+            <div class="system-icons">
+                <button class="extra-icons"></button>
+                <button class="battery"></button>
+                <button class="wifi"></button>
+                <button class="volume"></button>
+                <button class="notifications"></button>
+                <button class="date-time">
+                    <span class="time"></span>
+                    <span class="date"></span>
+                </button>
+                <button class="show-desktop"></button>
+            </div>
+        </footer>
+
+        <script src="js/lodash.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/gridstack.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

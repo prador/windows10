@@ -1,0 +1,21 @@
+@mixin taskbar-icon($width) {
+    height: 50px;
+    margin: 0px 6px;
+    padding: 0px;
+    width: $width;
+    border-bottom: 3px solid $bg-default;
+}
+@mixin background($image,$pos,$bg,$bg-size) {
+    background-image: url(../images/#{$image}.png);
+    background-repeat: no-repeat;
+    background-position: $pos;
+    background-color: $bg;
+    background-size: $bg-size;
+}
+@mixin sys-icon {
+    background-color: $bg-default;
+    &:hover {
+        background-color: $bg-hover;
+        border-bottom: 3px solid $bg-hover;
+    }
+}

@@ -1,0 +1,1292 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+* 1. Set default font family to sans-serif.
+* 2. Prevent iOS and IE text size adjust after device orientation change,
+*    without disabling user zoom.
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%
+  /* 2 */
+}
+
+/**
+* Remove default margin.
+*/
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+========================================================================== */
+/**
+* Correct `block` display not defined for any HTML5 element in IE 8/9.
+* Correct `block` display not defined for `details` or `summary` in IE 10/11
+* and Firefox.
+* Correct `block` display not defined for `main` in IE 11.
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+* 1. Correct `inline-block` display not defined in IE 8/9.
+* 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+*/
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline
+  /* 2 */
+}
+
+/**
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+* Address `[hidden]` styling not present in IE 8/9/10.
+* Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+*/
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+========================================================================== */
+/**
+* Remove the gray background color from active links in IE 10.
+*/
+a {
+  background-color: transparent;
+}
+
+/**
+* Improve readability of focused elements when they are also in an
+* active/hover state.
+*/
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+========================================================================== */
+/**
+* Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+*/
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+* Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+*/
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+* Address styling not present in Safari and Chrome.
+*/
+dfn {
+  font-style: italic;
+}
+
+/**
+* Address variable `h1` font-size and margin within `section` and `article`
+* contexts in Firefox 4+, Safari, and Chrome.
+*/
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+* Address styling not present in IE 8/9.
+*/
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+* Address inconsistent and variable font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` affecting `line-height` in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+========================================================================== */
+/**
+* Remove border when inside `a` element in IE 8/9/10.
+*/
+img {
+  border: 0;
+}
+
+/**
+* Correct overflow not hidden in IE 9/10/11.
+*/
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+========================================================================== */
+/**
+* Address margin not present in IE 8/9 and Safari.
+*/
+figure {
+  margin: 1em 40px;
+}
+
+/**
+* Address differences between Firefox and other browsers.
+*/
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+* Contain overflow in all browsers.
+*/
+pre {
+  overflow: auto;
+}
+
+/**
+* Address odd `em`-unit font size rendering in all browsers.
+*/
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+========================================================================== */
+/**
+* Known limitation: by default, Chrome and Safari on OS X allow very limited
+* styling of `select`, unless a `border` property is set.
+*/
+/**
+* 1. Correct color not being inherited.
+*    Known issue: affects color of disabled elements.
+* 2. Correct font properties not being inherited.
+* 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+*/
+button,
+input,
+.taskbar button,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0
+  /* 3 */
+}
+
+/**
+* Address `overflow` set to `hidden` in IE 8/9/10/11.
+*/
+button {
+  overflow: visible;
+}
+
+/**
+* Address inconsistent `text-transform` inheritance for `button` and `select`.
+* All other form control elements do not inherit `text-transform` values.
+* Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+* Correct `select` style inheritance in Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Correct inability to style clickable `input` types in iOS.
+* 3. Improve usability and consistency of cursor style between image-type
+*    `input` and others.
+*/
+button,
+html input[type="button"],
+html .taskbar button[type="button"],
+.taskbar html button[type="button"],
+input[type="reset"],
+.taskbar button[type="reset"],
+input[type="submit"],
+.taskbar button[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer
+  /* 3 */
+}
+
+/**
+* Re-set default cursor for disabled elements.
+*/
+button[disabled],
+html input[disabled],
+html .taskbar button[disabled],
+.taskbar html button[disabled] {
+  cursor: default;
+}
+
+/**
+* Remove inner padding and border in Firefox 4+.
+*/
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+.taskbar button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+* Address Firefox 4+ setting `line-height` on `input` using `!important` in
+* the UA stylesheet.
+*/
+input, .taskbar button {
+  line-height: normal;
+}
+
+/**
+* It's recommended that you don't attempt to style these elements.
+* Firefox's implementation doesn't respect box-sizing, padding, or width.
+*
+* 1. Address box sizing set to `content-box` in IE 8/9/10.
+* 2. Remove excess padding in IE 8/9/10.
+*/
+input[type="checkbox"], .taskbar button[type="checkbox"],
+input[type="radio"],
+.taskbar button[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+* Fix the cursor style for Chrome's increment/decrement buttons. For certain
+* `font-size` values of the `input`, it causes the cursor style of the
+* decrement button to change from `default` to `text`.
+*/
+input[type="number"]::-webkit-inner-spin-button, .taskbar button[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+.taskbar button[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+*/
+input[type="search"], .taskbar button[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box
+  /* 2 */
+}
+
+/**
+* Remove inner padding and search cancel button in Safari and Chrome on OS X.
+* Safari (but not Chrome) clips the cancel button when the search input has
+* padding (and `textfield` appearance).
+*/
+input[type="search"]::-webkit-search-cancel-button, .taskbar button[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+.taskbar button[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* Define consistent border, margin, and padding.
+*/
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+* 1. Correct `color` not being inherited in IE 8/9/10/11.
+* 2. Remove padding so people aren't caught out if they zero out fieldsets.
+*/
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+* Remove default vertical scrollbar in IE 8/9/10/11.
+*/
+textarea {
+  overflow: auto;
+}
+
+/**
+* Don't inherit the `font-weight` (applied by a rule above).
+* NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+*/
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+========================================================================== */
+/**
+* Remove most spacing between table cells.
+*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
+  margin: auto 10%;
+  top: 0;
+  width: 80%;
+  /* Full width */
+  height: 60%
+  /* Full height */
+  /* Modal Content */
+}
+.modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+.modal .modal-content .modal-header {
+  background-color: #e6e6e6;
+  color: #000000;
+  height: 40px;
+}
+.modal .modal-content .modal-header span {
+  padding: 0px 30px 10px;
+  height: 40px;
+  font-size: 25px;
+}
+.modal .modal-content .modal-header .back-button {
+  float: left;
+  padding: 0px 25px 10px;
+  background-image: url(../images/back-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-color: #e6e6e6;
+  background-size: 30px;
+}
+.modal .modal-content .modal-header .back-button:hover, .modal .modal-content .modal-header .back-button:focus {
+  background-image: url(../images/back-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-color: #bfbfbf;
+  background-size: 30px;
+}
+.modal .modal-content .modal-header .settings-header {
+  font-size: 16px;
+  position: relative;
+  top: 12px;
+  padding-left: 5px;
+}
+.modal .modal-content .modal-header .control-buttons {
+  float: right;
+  cursor: pointer;
+}
+.modal .modal-content .modal-header .control-buttons .minimize {
+  width: 40px;
+  background-image: url(../images/minimize.png);
+  background-repeat: no-repeat;
+  background-position: 22px;
+  background-color: #e6e6e6;
+  background-size: 18px;
+}
+.modal .modal-content .modal-header .control-buttons .minimize:hover, .modal .modal-content .modal-header .control-buttons .minimize:focus {
+  background-image: url(../images/minimize.png);
+  background-repeat: no-repeat;
+  background-position: 22px;
+  background-color: #bfbfbf;
+  background-size: 18px;
+}
+.modal .modal-content .modal-header .control-buttons .maximize {
+  background-image: url(../images/maximize.png);
+  background-repeat: no-repeat;
+  background-position: 23px;
+  background-color: #e6e6e6;
+  background-size: 15px;
+}
+.modal .modal-content .modal-header .control-buttons .maximize:hover, .modal .modal-content .modal-header .control-buttons .maximize:focus {
+  background-image: url(../images/maximize.png);
+  background-repeat: no-repeat;
+  background-position: 23px;
+  background-color: #bfbfbf;
+  background-size: 15px;
+}
+.modal .modal-content .modal-header .control-buttons .close {
+  background-image: url(../images/close-black.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-color: #e6e6e6;
+  background-size: 22px;
+}
+.modal .modal-content .modal-header .control-buttons .close:hover, .modal .modal-content .modal-header .control-buttons .close:focus {
+  background-image: url(../images/close-white.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-color: #e61b1b;
+  background-size: 22px;
+}
+.modal .modal-content .modal-header .control-buttons .restore {
+  background-image: url(../images/restore.png);
+  background-repeat: no-repeat;
+  background-position: 23px;
+  background-color: #e6e6e6;
+  background-size: 15px;
+}
+.modal .modal-content .modal-header .control-buttons .restore:hover, .modal .modal-content .modal-header .control-buttons .restore:focus {
+  background-image: url(../images/restore.png);
+  background-repeat: no-repeat;
+  background-position: 23px;
+  background-color: #bfbfbf;
+  background-size: 15px;
+}
+.modal .modal-content .modal-titlebar {
+  background-color: #e6e6e6;
+  height: 60px;
+}
+.modal .modal-content .modal-titlebar .personalize-modal {
+  float: left;
+  padding: 0px 25px 10px;
+  height: 60px;
+  background-image: url(../images/personalize-modal.png);
+  background-repeat: no-repeat;
+  background-position: 15px;
+  background-color: #e6e6e6;
+  background-size: 40px;
+}
+.modal .modal-content .modal-titlebar .personalize-titlebar {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 17px;
+  margin-left: 15px;
+}
+.modal .modal-content .modal-titlebar input[type="search"], .modal .modal-content .modal-titlebar .taskbar button[type="search"], .taskbar .modal .modal-content .modal-titlebar button[type="search"] {
+  float: right;
+  width: 25%;
+  margin: 12px 15px 0px 0px;
+  border: 3px solid #7a7a7a;
+  color: #606060;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: 98%;
+  background-color: #f0f0f0;
+  background-size: 15px;
+  padding: 8px;
+}
+.modal .modal-content .modal-titlebar input[type="search"]:hover, .modal .modal-content .modal-titlebar .taskbar button[type="search"]:hover, .taskbar .modal .modal-content .modal-titlebar button[type="search"]:hover {
+  border: 3px solid #000000;
+}
+.modal .modal-content .modal-titlebar input[type="search"]:focus, .modal .modal-content .modal-titlebar .taskbar button[type="search"]:focus, .taskbar .modal .modal-content .modal-titlebar button[type="search"]:focus, .modal .modal-content .modal-titlebar input[type="search"]:active, .modal .modal-content .modal-titlebar .taskbar button[type="search"]:active, .taskbar .modal .modal-content .modal-titlebar button[type="search"]:active {
+  border: 3px solid #0078d7;
+  color: #a6a6a6;
+  background-color: #ffffff;
+}
+.modal .modal-content .modal-body .modal-left {
+  width: 29%;
+  display: inline-block;
+  background-color: #f2f2f2;
+}
+.modal .modal-content .modal-body .modal-left ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+.modal .modal-content .modal-body .modal-left ul li {
+  padding: 25px 30px;
+  width: 100%;
+}
+.modal .modal-content .modal-body .modal-left ul li:hover, .modal .modal-content .modal-body .modal-left ul li:focus, .modal .modal-content .modal-body .modal-left ul li:active {
+  background-color: #d4d4d4;
+}
+.modal .modal-content .modal-body .modal-left ul .active {
+  background-color: #91c1e7;
+}
+.modal .modal-content .modal-body .modal-left ul .active:hover, .modal .modal-content .modal-body .modal-left ul .active:focus, .modal .modal-content .modal-body .modal-left ul .active:active {
+  background-color: #459be0;
+}
+.modal .modal-content .modal-body .modal-right {
+  width: 70%;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0px 25px;
+}
+.modal .modal-content .modal-body .modal-right * {
+  display: block;
+  margin-top: 15px;
+}
+.modal .modal-content .modal-body .modal-right h1 {
+  font-weight: 100;
+}
+.modal .modal-content .modal-body .modal-right .select-heading {
+  font-size: 20px;
+}
+.modal .modal-content .modal-body .modal-right .drop-selector {
+  border: 2px solid #999999;
+  background-image: url(../images/caret-down.png);
+  background-repeat: no-repeat;
+  background-position: 98%;
+  background-color: #ffffff;
+  background-size: 15px;
+  width: 30%;
+  padding: 10px 15px;
+  color: #000000;
+}
+.modal .modal-content .modal-body .modal-right .dropdown-list {
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.modal .modal-content .modal-body .modal-right .dropdown-list li {
+  padding: 20px;
+}
+.modal .modal-content .modal-body .modal-right .dropdown-list .active {
+  background-color: #91c1e7;
+}
+.modal .modal-content .modal-body .modal-right .dropdown-list .active:hover, .modal .modal-content .modal-body .modal-right .dropdown-list .active:focus, .modal .modal-content .modal-body .modal-right .dropdown-list .active:active {
+  background-color: #459be0;
+}
+.modal .modal-content .modal-body .modal-right .preview-box {
+  width: 50%;
+  background: url(../images/background.png) no-repeat;
+  background-size: cover;
+}
+.modal .modal-content .modal-body .modal-right .browse-btn {
+  border: none;
+  background-color: #cccccc;
+  color: #000000;
+  padding: 10px 25px;
+}
+
+.max {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 95%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.desktop {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/background.png) no-repeat;
+  background-size: cover;
+}
+.desktop .grid-stack > .grid-stack-item {
+  min-width: 4%;
+}
+.desktop .grid-stack > .grid-stack-item[data-gs-width='1'] {
+  width: 4%;
+}
+.desktop .grid-stack > .grid-stack-item .grid-stack-item-content {
+  width: 50%;
+}
+.desktop .grid-stack-item.chrome {
+  background-image: url(../images/chrome.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.firefox {
+  background-image: url(../images/firefox.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.adobe-cc {
+  background-image: url(../images/adobe-cc.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.github-shell {
+  background-image: url(../images/github-shell.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.github {
+  background-image: url(../images/github.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.opera {
+  background-image: url(../images/opera.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.lightroom {
+  background-image: url(../images/lightroom.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.steam {
+  background-image: url(../images/steam.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.edge {
+  background-image: url(../images/edge.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.personalize {
+  background-image: url(../images/personalize.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+.desktop .grid-stack-item.recycle {
+  background-image: url(../images/recycle.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: rgba 0, 0, 0, 0;
+  background-size: 50px;
+}
+
+.taskbar {
+  width: 100vw;
+  height: 50px;
+  background-color: #000408;
+  color: #999999;
+  position: fixed;
+  bottom: 0px;
+}
+.taskbar input, .taskbar button {
+  border: none;
+  outline: none;
+  font-family: "verdana";
+  float: left;
+}
+.taskbar button {
+  cursor: auto;
+}
+.taskbar .start-btn {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 60px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/start.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-color: #000408;
+  background-size: 20px;
+  margin: 0px;
+}
+.taskbar .start-btn:hover {
+  background-image: url(../images/start-hover.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-color: #1a1a1a;
+  background-size: 20px;
+}
+.taskbar .search-bar {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 430px;
+  border-bottom: 3px solid #000408;
+  background-color: #333333;
+  padding: 15px;
+  margin: 0px;
+}
+.taskbar .taskview {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/taskview.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 26px;
+}
+.taskbar .taskview:hover {
+  background-image: url(../images/taskview-hover.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-color: #1a1a1a;
+  background-size: 33px;
+}
+.taskbar .explorer {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/explorer.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .explorer:hover {
+  background-image: url(../images/explorer.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .explorer:active, .taskbar .explorer:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .outlook {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/outlook.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .outlook:hover {
+  background-image: url(../images/outlook.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .outlook:active, .taskbar .outlook:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .skype {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/skype.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .skype:hover {
+  background-image: url(../images/skype.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .skype:active, .taskbar .skype:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .edge {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/edge.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .edge:hover {
+  background-image: url(../images/edge.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .edge:active, .taskbar .edge:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .chrome-task {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/chrome-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .chrome-task:hover {
+  background-image: url(../images/chrome-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .chrome-task:active, .taskbar .chrome-task:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .firefox-task {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/firefox-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .firefox-task:hover {
+  background-image: url(../images/firefox-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .firefox-task:active, .taskbar .firefox-task:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .opera-task {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/opera-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .opera-task:hover {
+  background-image: url(../images/opera-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .opera-task:active, .taskbar .opera-task:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .gimp {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/gimp.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .gimp:hover {
+  background-image: url(../images/gimp.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .gimp:active, .taskbar .gimp:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .photoshop {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/photoshop.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .photoshop:hover {
+  background-image: url(../images/photoshop.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .photoshop:active, .taskbar .photoshop:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .brackets {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/brackets.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .brackets:hover {
+  background-image: url(../images/brackets.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .brackets:active, .taskbar .brackets:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .designer {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/designer.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .designer:hover {
+  background-image: url(../images/designer.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .designer:active, .taskbar .designer:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .npp {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/npp.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .npp:hover {
+  background-image: url(../images/npp.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .npp:active, .taskbar .npp:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .vstudio {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/vstudio.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .vstudio:hover {
+  background-image: url(../images/vstudio.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .vstudio:active, .taskbar .vstudio:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .git-task {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/git-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 30px;
+}
+.taskbar .git-task:hover {
+  background-image: url(../images/git-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 30px;
+}
+.taskbar .git-task:active, .taskbar .git-task:focus {
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .personalize-task {
+  display: none;
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 51px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/personalize-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 33px;
+  border-bottom: 3px solid #76b9ed;
+}
+.taskbar .personalize-task:hover, .taskbar .personalize-task:active, .taskbar .personalize-task:focus {
+  background-image: url(../images/personalize-task.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 33px;
+}
+.taskbar .system-icons {
+  float: right;
+}
+.taskbar .system-icons .extra-icons {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 30px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/caret-up.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 20px;
+  margin: 0px;
+}
+.taskbar .system-icons .extra-icons:hover {
+  background-image: url(../images/caret-up.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 20px;
+}
+.taskbar .system-icons .battery {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 32px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/battery.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 24px;
+  margin: 0px;
+}
+.taskbar .system-icons .battery:hover {
+  background-image: url(../images/battery.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 24px;
+}
+.taskbar .system-icons .wifi {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 30px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/wifi.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 22px;
+  margin: 0px;
+}
+.taskbar .system-icons .wifi:hover {
+  background-image: url(../images/wifi.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 22px;
+}
+.taskbar .system-icons .volume {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 32px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/full-volume.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 24px;
+  margin: 0px;
+}
+.taskbar .system-icons .volume:hover {
+  background-image: url(../images/full-volume.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 24px;
+}
+.taskbar .system-icons .notifications {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 34px;
+  border-bottom: 3px solid #000408;
+  background-image: url(../images/notifications.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #000408;
+  background-size: 26px;
+  margin: 0px;
+}
+.taskbar .system-icons .notifications:hover {
+  background-image: url(../images/notifications.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #1a1a1a;
+  background-size: 26px;
+}
+.taskbar .system-icons .date-time {
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 80px;
+  border-bottom: 3px solid #000408;
+  font-size: 14px;
+  color: #fff;
+  margin: 0px 4px;
+  background-color: #000408;
+}
+.taskbar .system-icons .date-time:hover {
+  background-color: #1a1a1a;
+  border-bottom: 3px solid #1a1a1a;
+}
+.taskbar .system-icons .show-desktop {
+  border-left: 1px solid #66686b;
+  height: 50px;
+  margin: 0px 6px;
+  padding: 0px;
+  width: 7px;
+  border-bottom: 3px solid #000408;
+  background-color: #000408;
+}
+.taskbar .system-icons .show-desktop:hover {
+  background-color: #1a1a1a;
+  border-bottom: 3px solid #1a1a1a;
+}
+
+/*# sourceMappingURL=style.css.map */

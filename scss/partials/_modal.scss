@@ -1,0 +1,202 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    margin: auto 10%;
+    top: 0;
+    width: 80%; /* Full width */
+    height: 60%; /* Full height */
+    
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        .modal-header {
+            background-color: $modal-default;
+            color: #000000;
+            height: 40px;
+            span {
+                padding: 0px 30px 10px;
+                height: 40px;
+                font-size: 25px;
+            }
+            .back-button {
+                float: left;
+                padding: 0px 25px 10px;
+                @include background(back-arrow,5px,$modal-default,30px);
+                &:hover,&:focus {
+                    @include background(back-arrow,5px,$modal-hover,30px);
+                }
+            }
+            .settings-header {
+                font-size: 16px;
+                position: relative;
+                top: 12px;
+                padding-left: 5px;
+            }
+            .control-buttons {
+                float: right;
+                cursor: pointer;
+                .minimize {
+                    width: 40px;
+                    @include background(minimize,22px,$modal-default,18px);
+                    &:hover,&:focus {
+                        @include background(minimize,22px,$modal-hover,18px);
+                    }
+                }
+                .maximize {
+                    @include background(maximize,23px,$modal-default,15px);
+                    &:hover,&:focus {
+                        @include background(maximize,23px,$modal-hover,15px);
+                    }
+                }
+                .close {
+                    @include background(close-black,20px,$modal-default,22px);
+                    &:hover,&:focus {
+                        @include background(close-white,20px,$close-hover,22px);
+                    }
+                } 
+                .restore {
+                    @include background(restore,23px,$modal-default,15px);
+                    &:hover,&:focus {
+                        @include background(restore,23px,$modal-hover,15px);
+                    }
+                }
+            }
+        }
+        .modal-titlebar {
+            background-color: $modal-default;
+            height: 60px;
+            .personalize-modal {
+                float: left;
+                padding: 0px 25px 10px;
+                height: 60px;
+                @include background(personalize-modal,15px,$modal-default,40px);
+            }
+            .personalize-titlebar {
+                font-size: 18px;
+                font-weight: bold;
+                position: relative;
+                top: 17px;
+                margin-left: 15px;
+            }
+            input[type="search"] {
+                float: right;
+                width: 25%;
+                margin: 12px 15px 0px 0px;
+                border: 3px solid #7a7a7a;
+                color: #606060;
+                @include background(search,98%,#f0f0f0,15px);
+                padding: 8px;
+                &:hover{
+                    border: 3px solid #000000;
+                }
+                &:focus,&:active {
+                    border: 3px solid #0078d7;  
+                    color: #a6a6a6;
+                    background-color: #ffffff;
+                }
+            }
+        }
+        .modal-body {
+            .modal-left {
+                width: 29%;
+                display: inline-block;
+                background-color: #f2f2f2;
+                ul {
+                    padding: 0px;
+                    margin: 0px;
+                    list-style-type: none;
+                    li {
+                        padding: 25px 30px;
+                        width: 100%;
+                        &:hover,&:focus,&:active {
+                            background-color: #d4d4d4;
+                        }
+                    }
+                    .active {
+                        background-color: #91c1e7;
+                        &:hover,&:focus,&:active {
+                            background-color: #459be0;
+                        }
+                    }
+                }
+            }
+            .modal-right {
+                width: 70%;
+                display: inline-block;
+                background-color: #ffffff;
+                padding: 0px 25px;
+                * {
+                    display: block;
+                    margin-top: 15px;
+                }
+                h1 {
+                    font-weight: 100;
+                }
+                .select-heading {
+                    font-size: 20px;
+                }
+                .drop-selector {
+                    border:2px solid #999999;
+                    @include background(caret-down,98%,#ffffff,15px);
+                    width: 30%;
+                    padding: 10px 15px;
+                    color: #000000;
+                }
+                .dropdown-list {
+                    position: relative;
+                    top: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    li {
+                        padding: 20px;
+                    }
+                    .active {
+                        background-color: #91c1e7;
+                        &:hover,&:focus,&:active {
+                            background-color: #459be0;
+                        }
+                    }
+                }
+                .preview-box {
+                    width: 50%;
+                    background: url(../images/background.png) no-repeat;
+                    background-size: cover;
+
+                }
+                .browse-btn {
+                    border: none;
+                    background-color: #cccccc;
+                    color: #000000;
+                    padding: 10px 25px;
+                }
+            }
+        }
+        
+    }
+}
+.max {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 50px;
+}
+
+
